@@ -28,7 +28,7 @@ export default function List({ contacts }) {
                     Search
                 </Label>
             </FormGroup>
-            <ListGroup className='pt-3'>
+            <ListGroup>
                 {filtered.map((list, i) =>
                     <ListGroupItem key={i} className='d-flex justify-content-between align-items-center py-3'>
                         <div>
