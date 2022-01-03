@@ -16,16 +16,14 @@ export default function Contact() {
             .then(res => {
                 const contacts = res.data
                 setContacts(contacts)
-                // console.log(contacts)
             })
             .catch((error) => {
                 console.log(error)
             })
-
     }
 
     return (
-        <div>
+        <div className='py-5'>
             <List contacts={contacts} />
             <AddContact contacts={contacts} setContacts={setContacts} />
         </div>
